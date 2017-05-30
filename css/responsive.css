@@ -1,6 +1,16 @@
 @media screen and (max-width: 980px) {
 	#myPic {
 		float: none;
+		margin: auto;
+	}
+	.row {
+		max-width: 860;
+	}
+}
+
+@media screen and (min-width: 981px) {
+	.rowMain {
+		max-width: 960px;
 	}
 }
 
@@ -14,6 +24,8 @@
 	border-color: green;
 	border-style: dashed;
 	border-width: 1px;
+	max-width: 760px;
+	margin: auto;
 }
 
 .row::after {
@@ -24,6 +36,11 @@
 
 .container {
 	padding: 15px;
+}
+
+.containerHead {
+	padding-right: 15px;
+	padding-left: 15px;
 }
 
 

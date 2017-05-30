@@ -31,7 +31,7 @@ nav {
 
 main {
 	width: 100%;
-	margin: auto;
+	margin: 0px;
 	position: relative;
 	height: 100%;
 	overflow: auto;
@@ -160,7 +160,7 @@ a:hover {
 }
 
 .headerWrap {
-	width: 960px;
+	max-width: 760px;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
