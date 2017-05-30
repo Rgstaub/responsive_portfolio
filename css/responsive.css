@@ -1,22 +1,7 @@
-@media screen and (max-width: 980px) {
-	#myPic {
-		float: none;
-		margin: auto;
-	}
-	.row {
-		max-width: 860;
-	}
-}
 
-@media screen and (min-width: 981px) {
-	.rowMain {
-		max-width: 960px;
-	}
-}
 
 [class*="col-"] {
     float: left;
-    border: 1px solid red;
 }
 
 .row {
@@ -24,7 +9,7 @@
 	border-color: green;
 	border-style: dashed;
 	border-width: 1px;
-	max-width: 760px;
+
 	margin: auto;
 }
 
@@ -36,11 +21,16 @@
 
 .container {
 	padding: 15px;
+	overflow: auto;
+	border-style: dotted;
+	border-color: red;
+	border-width: 1px;
 }
 
 .containerHead {
 	padding-right: 15px;
 	padding-left: 15px;
+	overflow: auto;
 }
 
 
@@ -56,3 +46,73 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+
+@media screen and (max-width: 640px) {
+	.containerHead {
+		padding: 0px;
+	}
+	.myName {
+		width: 100%;
+		text-align: center;
+	}
+	nav {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		float: none;
+		margin: auto;
+		clear: both;
+		text-align: center;
+		width: 100%
+	}
+	.navigate {
+		text-align: center;
+		width: 33.333%;
+		margin: 0px;
+		padding: 0px;
+	}
+	#myPic {
+		width: 100%;
+		height: auto;
+		margin-bottom: 15px;
+	}
+	.icon {
+		width: 64px;
+		margin: 7px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	div.col-8 {
+		width: 100%;
+	}
+	div.col-4 {
+		width: 100px;
+	}
+	#myPic {
+		float: left;
+		margin-bottom: 5px;
+	}
+}
+
+@media screen and (max-width: 980px) and (min-width: 769px) {
+	#myPic {
+		float: none;
+		width: 100%;
+		height: auto;
+		margin-bottom: 15px;
+	}
+	.row {
+		max-width: 760px;
+	}
+	.icon {
+		width: 53px;
+		margin: 3px;
+	}
+}
+
+@media screen and (min-width: 982px) {
+	.row {
+		max-width: 960px;
+	}
+}

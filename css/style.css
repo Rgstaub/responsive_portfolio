@@ -19,14 +19,25 @@ header {
 	border-bottom-style: solid;
 	border-color: #cccccc;
 	border-width: 3px;
+	overflow: auto;
 /*	min-width: 960px;
 */}
 
 nav {
 	float: right;
 	position: relative;
-	top: 30px;
+/*	top: 30px;*/
 	color: #777777;
+/*	padding-top: 30px;
+	padding-bottom: 15px;*/
+	overflow: auto;
+	width: 300px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+p {
+	line-height: 30px;
 }
 
 main {
@@ -43,10 +54,10 @@ main {
 	float:left;
 }*/
 
-/*aside {*/
-	/*width: 270px;*/
-	/*float: right;*/
-}
+/*aside {
+	width: 270px;
+	float: right;
+}*/
 
 footer {
 	background-color: #666666;
@@ -156,17 +167,17 @@ a:hover {
 }
 
 .push {
-	height: 108px;	/*for the 'sticky' footer */
+	height: 78px;	/*for the 'sticky' footer */
 }
 
-.headerWrap {
+/*.headerWrap {
 	max-width: 760px;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
 	overflow: auto;
 }
-
+*/
 .myName {
 	float: left;
 	background-color: #4aaaa5;
@@ -182,18 +193,29 @@ a:hover {
 
 
 .navigate {
-	padding-right: 15px;
-	padding-left: 15px;
+/*	padding-right: 15px;
+	padding-left: 15px;*/
 	font-size: 1.2em;
 	color: #777777;
+	display: inline-block;
+	overflow: auto;
+	line-height: 120%;
+	float: right;
+	text-align: right;
+	padding-left: 15px;
+	margin-left: 15px;
+	border-left-style: solid;
+	border-color: #dddddd;
+	border-width: 2px;
 }
 
 .contentBox {
 	background-color: #ffffff;
-	padding: 25px;
+	padding: 15px;
 	border-style: solid;
 	border-color: #cccccc;
 	border-width: 1px;
+	overflow: auto;
 }
 
 .portfolioItem {
@@ -251,20 +273,21 @@ a:hover {
     transition-duration: 0.3s;
 }
 
+.icon {
+	width: 64px;
+	margin: 5px;
+}
+
 #aboutLink {
-	border-right-style: solid;
-	border-color: #dddddd;
-	border-width: 2px;
+	border-left-style: none;
 }
 
 #portfolioLink {
-	border-right-style: solid;
-	border-color: #dddddd;
-	border-width: 2px;
+
 }
 
 #contactLink {
-	padding-right: 0px;
+
 }
 
 
@@ -274,7 +297,7 @@ a:hover {
 	margin-bottom: 5px;
 }
 
-#git {
+/*#git {
 	margin-right: 7px;
 	width: 64px;
 }
@@ -286,7 +309,7 @@ a:hover {
 
 #stackOverflow {
 	width: 64px;
-}
+}*/
 
 #puzzleGame {
 	background-image: url(../images/puzzleGame.png);
