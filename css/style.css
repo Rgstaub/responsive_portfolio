@@ -218,11 +218,16 @@ a:hover {
 	overflow: auto;
 }
 
-.portfolioItem {
-	width: 281px;
-	height: 192px;
-	background-color: #aaaaaa;
+.portfolioFrame {
+	width: 50%;
+	height: 100%;
 	float: left;
+	padding: 15px
+}
+
+.portfolioItem {
+	position: relative;
+	height: 100%
 }
 
 .portfolioBanner {
@@ -235,6 +240,20 @@ a:hover {
 	top: 120px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size: 1.3em;
+	display: inline-block;
+}
+
+.portBanner {
+	background-color: #4aaaa5;
+	position: relative;
+	bottom: 70px;
+	width: 100%;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 1.3em;
+	color: #ffffff;
+	padding-top: 14px;
+	height: 50px;
+	text-align: center;
 }
 
 .portfolioItem:hover {

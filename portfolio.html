@@ -3,60 +3,105 @@
 <head>
 	<title>Richard Staub - Portfolio</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 <body>
 	<div class="stickyFooterWrap">
-	<header>
-		<div class="headerWrap">
-			<a href="index.html">
-				<div class="myName">Richard Staub</div>
-			</a>
-			<nav>
-				<a href="index.html" class="navigate" id="aboutLink">About</a>
-				<a href="portfolio.html" class="navigate" id="portfolioLink">Portfolio</a>
-				<a href="contact.html" class="navigate" id="contactLink">Contact</a>
-			</nav>
-		</div>
-	</header>
-
+		<header>
+			<div class="row">
+				<div class="containerHead col-12">
+					<div class="myName">
+						Richard Staub
+					</div>		
+						<nav>
+						<a href="contact.html" class="navigate" id="contactLink">Contact</a>
+						<a href="portfolio.html" class="navigate" id="portfolioLink">Portfolio</a>
+						<a href="index.html" class="navigate" id="aboutLink">About</a>
+					</nav>
+				</div>
+			</div>
+		</header>
 	<main>
-		<section class="contentBox" id="portfolioGallery">
-			<h1>Portfolio</h1>
-			<a href="https://youtu.be/DLzxrzFCyOs" target="_blank">
-				<div id="puzzleGame" class="portfolioItem portfolioFirstRow">
-					<div class="portfolioBanner">Puzzle Game</div>
-				</div>
-			</a>
-			<a href="https://youtu.be/P6dUCOS1bM0" target="_blank">
-				<div id="rpgGame" class="portfolioItem portfolioSecondRow">
-					<div class="portfolioBanner">RPG Game</div>
-				</div>
-			</a>
-			<a href="https://youtu.be/Z3ZAGBL6UBA" target="_blank">
-				<div id="fantasyEsports" class="portfolioItem portfolioFirstRow">
-					<div class="portfolioBanner">Fantasy E-Sports</div>
-				</div>
-			</a>	
-			<a href="https://youtu.be/jQE66WA2s-A" target="_blank">
-				<div id="thlCompanionApp" class="portfolioItem portfolioSecondRow">
-					<div class="portfolioBanner">THL Companion App</div>
-				</div>
-			</a>	
-			<a href="https://youtu.be/kfVsfOSbJY0" target="_blank">	
-				<div id="colorToy" class="portfolioItem portfolioFirstRow">
-					<div class="portfolioBanner">Color Toy</div>
-				</div>
-			</a>	
-		</section>
-		<aside class="contentBox" id="connectWithMe">
-			<h2>Connect with Me</h2>
-			<a href="https://github.com/Rgstaub" target="_blank"><img class="icon" id="git" src="images/gitHub.png" alt="GitHub Icon"></a>
-			<a href="https://www.linkedin.com/in/richard-staub-71533042/" target="_blank"><img class="icon" id="linkedIn" src="images/linkedIn.png" alt="Linkedin Icon"></a>
-			<a href="https://stackoverflow.com/users/7842668/rgstaub?tab=profile" target="_blank"><img class="icon" id="stackOverflow" src="images/stackOverflow.png" alt="Stack Overflow Icon"></a>
-		</aside>
-		
+		<div class="row">
+			<div class="container col-8">
+				<section class="contentBox" id="portfolioGallery">
+					<h1>Portfolio</h1>
+					<div class="row port">
+						<div class="portfolioFrame">
+							<div class="portfolioItem">
+								<img src="images/puzzleGame.png">
+								<div class="portBanner">Puzzle Game</div>
+							</div>
+						</div>
+						<div class="portfolioFrame">
+							<div class="portfolioItem">
+								<img src="images/rpg.jpg">
+							</div>
+						</div>
+						<div class="portfolioFrame">
+							<div class="portfolioItem">
+								<img src="images/esports.jpg">
+							</div>
+						</div>
+						<div class="portfolioFrame">
+							<div class="portfolioItem">
+								<img src="images/code.jpg">
+							</div>
+						</div>
+						<div class="portfolioFrame">
+							<div class="portfolioItem">
+								<img src="images/color.png">
+							</div>
+						</div>
+
+					</div>
+<!-- 					<a href="https://youtu.be/DLzxrzFCyOs" target="_blank">
+						<div id="puzzleGame" class="portfolioItem portfolioFirstRow">
+							<div class="portfolioBanner">Puzzle Game</div>
+						</div>
+					</a>
+					<a href="https://youtu.be/P6dUCOS1bM0" target="_blank">
+						<div id="rpgGame" class="portfolioItem portfolioSecondRow">
+							<div class="portfolioBanner">RPG Game</div>
+						</div>
+					</a>
+					<a href="https://youtu.be/Z3ZAGBL6UBA" target="_blank">
+						<div id="fantasyEsports" class="portfolioItem portfolioFirstRow">
+							<div class="portfolioBanner">Fantasy E-Sports</div>
+						</div>
+					</a>	
+					<a href="https://youtu.be/jQE66WA2s-A" target="_blank">
+						<div id="thlCompanionApp" class="portfolioItem portfolioSecondRow">
+							<div class="portfolioBanner">THL Companion App</div>
+						</div>
+					</a>	
+					<a href="https://youtu.be/kfVsfOSbJY0" target="_blank">	
+						<div id="colorToy" class="portfolioItem portfolioFirstRow">
+							<div class="portfolioBanner">Color Toy</div>
+						</div>
+					</a>	 -->
+				</section>
+			</div> <!-- container -->
+			<div id="contactMe">
+						<div class="container">
+							<div class="contentBox">
+								<h2>Connect with Me</h2>
+								<a href="https://github.com/Rgstaub" target="_blank">
+									<img class="icon" id="git" src="images/gitHub.png" alt="GitHub Icon">
+								</a>
+								<a href="https://www.linkedin.com/in/richard-staub-71533042/" target="_blank">
+									<img class="icon" id="linkedIn" src="images/linkedIn.png" alt="Linkedin Icon">
+								</a>
+								<a href="https://stackoverflow.com/users/7842668/rgstaub?tab=profile" target="_blank">
+									<img class="icon" id="stackOverflow" src="images/stackOverflow.png" alt="Stack Overflow Icon">
+								</a>
+							</div>
+						</div>
+					</div>
+		</div>
 	</main>
 	<div class="push"></div>
 	</div>

@@ -5,11 +5,6 @@
 }
 
 .row {
-	padding: -15px;
-	border-color: green;
-	border-style: dashed;
-	border-width: 1px;
-
 	margin: auto;
 }
 
@@ -19,12 +14,18 @@
     display: table;
 }
 
+.col-12 {
+
+}
+
+.col-6 {
+
+}
+
 .container {
 	padding: 15px;
 	overflow: auto;
-	border-style: dotted;
-	border-color: red;
-	border-width: 1px;
+
 }
 
 .containerHead {
@@ -33,6 +34,9 @@
 	overflow: auto;
 }
 
+.port {
+	margin: -15px
+}
 
 .col-1 {width: 8.33%;} 
 .col-2 {width: 16.66%;}
@@ -47,6 +51,11 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+img {
+	width: 100%;
+	height: auto;
+	float: left;
+}
 
 @media screen and (max-width: 640px) {
 	.containerHead {
@@ -80,9 +89,18 @@
 		width: 64px;
 		margin: 7px;
 	}
+	.portfolioFrame {
+		width: 100%;
+	}
+	div.col-8 {
+		width: 100%;
+	}
+	div.col-4 {
+		width: 100px;
+	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 641px) {
 	div.col-8 {
 		width: 100%;
 	}
@@ -92,6 +110,9 @@
 	#myPic {
 		float: left;
 		margin-bottom: 5px;
+	}
+	.portfolioFrame {
+		width: 50%;
 	}
 }
 
@@ -109,10 +130,16 @@
 		width: 53px;
 		margin: 3px;
 	}
+	.portfolioFrame {
+		width: 100%;
+	}
 }
 
 @media screen and (min-width: 982px) {
 	.row {
 		max-width: 960px;
+	}
+	.portfolioFrame {
+		width: 50%;
 	}
 }
