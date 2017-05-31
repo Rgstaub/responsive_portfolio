@@ -109,6 +109,7 @@ img {
 	}
 	#myPic {
 		float: left;
+		width: 208px;
 		margin-bottom: 5px;
 	}
 	.portfolioFrame {
@@ -133,13 +134,21 @@ img {
 	.portfolioFrame {
 		width: 100%;
 	}
+	#myPic {
+		float: left;
+		width: 208px;
+	}
 }
 
-@media screen and (min-width: 982px) {
+@media screen and (min-width: 981px) {
 	.row {
 		max-width: 960px;
 	}
 	.portfolioFrame {
 		width: 50%;
+	}
+	#myPic {
+		float: left;
+		width: 208px;
 	}
 }
